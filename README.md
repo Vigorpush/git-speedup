@@ -14,7 +14,7 @@ git config --global core.preloadindex true
 ```bash
 git config core.ignoreStat true
 ```
-##### Avoid inspecting large working trees' modification times
+##### Avoid inspecting large working trees' modification times, <span style="color:red">test</span>
 ```bash
 git config core.fscache true
 ```
