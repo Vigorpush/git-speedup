@@ -5,26 +5,28 @@ Speed up git bash on windows, also works on Mac machines. Including improvement 
 ### Small projects ---- gitspeedup.sh
 Which disenable the ignoreStat, can use the ```git add ``` when we have some changed
 ### Large projects ---- gitspeedupL.sh
-Which enable the ignoreStat, please use the ```markdown #git update-index --really-refresh ``` when we have changed files
+Which enable the ignoreStat, please use the 
+```git update-index --really-refresh
+``` when we have changed files
 
 # How is work
 
+#### 1. Repack the obects, the default was not to change the window or depth at all. As suggested by Jon Smirl, Linus Torvalds and others
 ```bash
 git repack -a -d --depth=250 --window=250 
 ```
-#### repack the obects 
 For more detial, please visit link:
 http://git.661346.n2.nabble.com/git-repack-vs-git-gc-aggressive-td7564559.html
 
+##### 2. Enable git preload file index
 ```bash
 git config --global core.preloadindex true
 ```
 
-##### Enable git preload file index
+##### 3. Avoid inspecting large working trees' modification times
 ```bash
 git config core.ignoreStat true
 ```
-##### Avoid inspecting large working trees' modification times
 When working with **large working** trees, Git's (frequent) checking whether files were modified since Git's internal index was last updated can lead to substantial lags. In such a case, it can make sense to switch off this check, but it comes at a price: it requires discipline on the developer's side to keep track which files were changed and git add them explicitly for the next commit (the output of git status will no longer identify modified files). You can disable the check per-repository thusly
 
 When ```bash git mv ```and ```bash git rm``` are used, those changes do get noticed, even on assume-unchanged files. When new files are added, eg by git annex add, they are also noticed, then, 
@@ -34,20 +36,20 @@ git update-index --really-refresh
 ```
 For more detial, please visit link: https://git-annex.branchable.com/tips/assume-unstaged/
 
+##### 4. Enble file system cache for local
 ```bash
 git config core.fscache true
 ```
-##### Enble file system cache for local
 
+##### 5. Enble file system cache for global
 ```bash
 git config --global core.fscache true
 ```
-##### Enble file system cache for global
 
+##### 6. Cleanup unnecessary files and optimize the local repository
 ```bash
 git config --global gc.auto 256
 ```
-##### Cleanup unnecessary files and optimize the local repository
 
 # How to use this
 
