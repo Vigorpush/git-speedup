@@ -18,12 +18,12 @@ git repack -a -d --depth=250 --window=250
 For more detial, please visit link:
 http://git.661346.n2.nabble.com/git-repack-vs-git-gc-aggressive-td7564559.html
 
-##### 2. Enable git preload file index
+#### 2. Enable git preload file index
 ```bash
 git config --global core.preloadindex true
 ```
 
-##### 3. Avoid inspecting large working trees' modification times
+#### 3. Avoid inspecting large working trees' modification times
 ```bash
 git config core.ignoreStat true
 ```
@@ -36,17 +36,17 @@ git update-index --really-refresh
 ```
 For more detial, please visit link: https://git-annex.branchable.com/tips/assume-unstaged/
 
-##### 4. Enble file system cache for local
+#### 4. Enble file system cache for local
 ```bash
 git config core.fscache true
 ```
 
-##### 5. Enble file system cache for global
+#### 5. Enble file system cache for global
 ```bash
 git config --global core.fscache true
 ```
 
-##### 6. Cleanup unnecessary files and optimize the local repository
+#### 6. Cleanup unnecessary files and optimize the local repository
 ```bash
 git config --global gc.auto 256
 ```
