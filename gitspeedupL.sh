@@ -1,8 +1,10 @@
 echo "Start To Speed Up Git On your Windows Machine!"
 
-echo "Activate Git's own tracing"
-GIT_TRACE=1 git stash #Activate Git's own tracing
 
+echo "Repack the objects which are useless by Counting and Compressing"
+git repack -a -d --depth=250 --window=250 
+# The default was not to change the window or depth at all.  As suggested by Jon Smirl, Linus Torvalds and others
+	 
 echo "Enable git preload file index"
 git config --global core.preloadindex true #Enable git preload file index
 

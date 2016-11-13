@@ -8,10 +8,14 @@ Which disenable the ignoreStat, can use the ```git add ``` when we have some cha
 Which enable the ignoreStat, please use the ```git update-index --really-refresh ``` when we have changed files
 
 # How is work
+
 ```bash
-GIT_TRACE=1 git stash
+git repack -a -d --depth=250 --window=250 
 ```
-##### Activate Git's own tracing, because the Git bash executes subcommands, this will be executes internally
+#### repack the obects 
+For more detial, please visit link:
+http://git.661346.n2.nabble.com/git-repack-vs-git-gc-aggressive-td7564559.html
+
 ```bash
 git config --global core.preloadindex true
 ```
@@ -90,3 +94,10 @@ PS1='\[\033]0;$MSYSTEM:\w\007
 \033[32m\]\u@\h \[\033[33m\w$(fast_git_ps1)\033[0m\]                                         
 $
 ```
+
+# Deleted Code
+
+```bash
+GIT_TRACE=1 git stash, this code was removed.
+```
+##### Activate Git's own tracing, because the Git bash executes subcommands, this will be executes internally
