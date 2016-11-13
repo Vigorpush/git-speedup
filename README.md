@@ -3,9 +3,9 @@ Speed up git bash on windows, also works on Mac machines. Including improvement 
 
 # Two Vesions 
 ### Small projects ---- gitspeedup.sh
-Which disenable the ignoreStat, can use the ```bash git add ``` when we have some changed
+Which disenable the ignoreStat, can use the ```git add ``` when we have some changed
 ### Large projects ---- gitspeedupL.sh
-Which enable the ignoreStat, please use the ```bash git update-index --really-refresh ``` when we have changed files
+Which enable the ignoreStat, please use the ```git update-index --really-refresh ``` when we have changed files
 
 # How is work
 ```bash
