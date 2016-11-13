@@ -1,5 +1,17 @@
 # git-speedup
 Speed up git bash on windows
+# How is work
+
+### GIT_TRACE=1 git stash
+#### Activate Git's own tracing, because the Git bash executes subcommands, this will be executes internally
+### git config --global core.preloadindex true
+#### Enable git preload file index
+### git config core.ignoreStat true
+#### Avoid inspecting large working trees' modification times, 
+### git config core.fscache true
+#### Enble file system cache
+### git config --global gc.auto 256
+#### Cleanup unnecessary files and optimize the local repository
 # How to use this
 
 ## Just run this sh file by double click
