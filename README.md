@@ -1,9 +1,9 @@
 # git-speedup
 Speed up git bash on windows
 # Two Vesions 
-One version is small project Script which gitspeedup.sh
+### One version is small project Script which gitspeedup.sh
 #### Which disenable the ignoreStat, can use the ```bash git add ``` when we have some changed
-One version is large project Script which gitspeedupL.sh
+### One version is large project Script which gitspeedupL.sh
 #### Which enable the ignoreStat, please use the ```bash git update-index --really-refresh ``` when we have changed files
 
 # How is work
