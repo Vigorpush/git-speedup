@@ -2,6 +2,8 @@
 Speed up git bash on windows
 # How to use this
 
+Just run this sh file by double click
+
 Using code to run this in git
 ```bash
 sh Script.sh
