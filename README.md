@@ -2,8 +2,11 @@
 Speed up git bash on windows
 # How to use this
 
-Using code to run this
-
+Using code to run this in git
+```bash
+sh Script.sh
+```
+Plan A
 ```bash
 # Set the execution for all the users for the given script
 chmod +x Script.sh
