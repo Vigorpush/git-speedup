@@ -9,7 +9,7 @@ This file is executed when the bash shell is initialized, you can do a lot of cu
 Near the bottom, you will find some commands related to setting a variable called PS1 (PS1 = ...)
 Either replace it or just append the following lines after it
 
-
+```bash
 fast_git_ps1 ()                                                                              
 {                                                                                            
     printf -- "$(git branch 2>/dev/null | grep -e '\* ' | sed 's/^..\(.*\)/ {\1} /')"    
@@ -18,3 +18,4 @@ fast_git_ps1 ()
 PS1='\[\033]0;$MSYSTEM:\w\007                                                                
 \033[32m\]\u@\h \[\033[33m\w$(fast_git_ps1)\033[0m\]                                         
 $
+```
