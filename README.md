@@ -2,13 +2,13 @@
 Speed up git bash on windows, also works on Mac machines. Including improvement of speed of executing git status, git add, git pull, git push, ls, cd etc.
 
 # Two Vesions 
-### Small projects ---- gitspeedup.sh
+### gitspeedup.sh ---- Small projects
 Which disEnable the ignoreStat, can use the ```git add ``` when we have some changed
-### Large projects ---- gitspeedupL.sh
+### gitspeedupL.sh ---- Large projects
 Which enable the ignoreStat, please use the 
 ```git update-index --really-refresh
 ``` when we have changed files
-### SSH Project ---- OptimazingSSH.sh
+### OptimazingSSH.sh ---- Any Projects which are using SSH 
 Which optimazing the SSH setting
 
 # How is work
