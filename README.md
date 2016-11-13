@@ -1,5 +1,8 @@
 # git-speedup
-Speed up git bash on windows
+Speed up git bash on windows, also works on Mac machines.
+
+**Including improvement of speed of executing git status, git add, git pull, git push, ls, cd etc.**
+
 # Two Vesions 
 ### Small projects ---- gitspeedup.sh
 #### Which disenable the ignoreStat, can use the ```bash git add ``` when we have some changed
