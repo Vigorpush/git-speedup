@@ -1,5 +1,7 @@
 echo "Start To Speed Up Git On your Windows Machine!"
 
+git repack -ad
+
 echo "Activate Git's own tracing"
 GIT_TRACE=1 git stash #Activate Git's own tracing
 
@@ -16,7 +18,7 @@ echo "Cleanup unnecessary files and optimize the local repository"
 git config --global gc.auto 256 #Set auto clean to be 256, to save memory
 
 echo "Enable inspecting small working trees' modification times"
-git config core.ignoreStat false
+git config --global core.ignoreStat false
 
 # These can be worked around by running git update-index --really-refresh after performing such operations. I hope that git add will be changed to stage changes to assume-unchanged files, which would remove this only complication
 
