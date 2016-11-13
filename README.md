@@ -14,7 +14,13 @@ git config --global core.preloadindex true
 ```bash
 git config core.ignoreStat true
 ```
-##### Avoid inspecting large working trees' modification times, <font color="red">Status: **Not yet implemented**</font>
+##### Avoid inspecting large working trees' modification times, When git mv and git rm are used, those changes do get noticed, even on assume-unchanged files. When new files are added, eg by git annex add, they are also noticed, then, 
+please use following code instead git add 
+```bash 
+git update-index --really-refresh
+```
+For more detial, please visit link: https://git-annex.branchable.com/tips/assume-unstaged/
+
 ```bash
 git config core.fscache true
 ```
