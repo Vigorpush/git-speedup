@@ -10,19 +10,26 @@ GIT_TRACE=1 git stash
 git config --global core.preloadindex true
 ```
 
-#### Enable git preload file index
+##### Enable git preload file index
 ```bash
 git config core.ignoreStat true
 ```
-#### Avoid inspecting large working trees' modification times, 
+##### Avoid inspecting large working trees' modification times
 ```bash
 git config core.fscache true
 ```
-#### Enble file system cache
+##### Enble file system cache for local
+
+```bash
+git config --global core.fscache true
+```
+##### Enble file system cache for global
+
 ```bash
 git config --global gc.auto 256
 ```
-#### Cleanup unnecessary files and optimize the local repository
+##### Cleanup unnecessary files and optimize the local repository
+
 # How to use this
 
 ## Just run this sh file by double click
