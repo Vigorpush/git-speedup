@@ -8,6 +8,8 @@ Which disEnable the ignoreStat, can use the ```git add ``` when we have some cha
 Which enable the ignoreStat, please use the 
 ```git update-index --really-refresh
 ``` when we have changed files
+### SSH Project ---- OptimazingSSH.sh
+Which optimazing the SSH setting
 
 # How is work
 
@@ -51,6 +53,18 @@ git config --global core.fscache true
 git config --global gc.auto 256
 ```
 
+#### 7. Enables the sharing of multiple SSH sessions over a single network connection, and auto-creating a master connection if it does not already exist
+```bash
+ControlMaster auto
+```
+#### 8. Specifies the path to the control socket used for connection sharing. %r will be substituted by the remote login username, %h by the target host name and %p by the port.
+```bash
+ControlPath /tmp/%r@%h:%p
+```
+#### 9. Keeps the master connection open in the background indefinitely
+```bash
+ControlPersist yes
+```
 # How to use this
 
 ## Just run this sh file by double click
