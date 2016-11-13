@@ -2,13 +2,13 @@
 Speed up git bash on windows
 # How to use this
 
-Just run this sh file by double click
+## Just run this sh file by double click
 
-Using code to run this in git
+## Using code to run this in git
 ```bash
 sh Script.sh
 ```
-Plan A
+### Plan A
 ```bash
 # Set the execution for all the users for the given script
 chmod +x Script.sh
@@ -17,7 +17,7 @@ chmod +x Script.sh
 ./Script.sh
 ```
 
-Plan B
+### Plan B
 ```bash
 # Set the execution for all the users for the given script
 chmod 777 /PATHTOFILE/Script.sh
