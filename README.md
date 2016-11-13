@@ -1,6 +1,27 @@
 # git-speedup
 Speed up git bash on windows
 # How to use this
+
+Using code to run this
+
+```bash
+# Set the execution for all the users for the given script
+chmod +x Script.sh
+
+# Execute the script
+./Script.sh
+```
+
+Plan B
+```bash
+# Set the execution for all the users for the given script
+chmod 777 /PATHTOFILE/Script.sh
+
+# Execute the script
+/PATHTOFILE/Script.sh
+```
+
+## Another way to make git faster (From online)
 I found the following change on a StackOverflow post that seems to work way faster:
 
 Go to your git install directory (Mine is c:\Program Files (x86)\Git
