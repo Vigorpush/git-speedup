@@ -14,8 +14,11 @@ git config --global core.preloadindex true
 ```bash
 git config core.ignoreStat true
 ```
-##### Avoid inspecting large working trees' modification times, When git mv and git rm are used, those changes do get noticed, even on assume-unchanged files. When new files are added, eg by git annex add, they are also noticed, then, 
-please use following code instead git add 
+##### Avoid inspecting large working trees' modification times
+When working with large working trees, Git's (frequent) checking whether files were modified since Git's internal index was last updated can lead to substantial lags. In such a case, it can make sense to switch off this check, but it comes at a price: it requires discipline on the developer's side to keep track which files were changed and git add them explicitly for the next commit (the output of git status will no longer identify modified files). You can disable the check per-repository thusly
+
+When git mv and git rm are used, those changes do get noticed, even on assume-unchanged files. When new files are added, eg by git annex add, they are also noticed, then, 
+please use following code instead ```bash git add ``` 
 ```bash 
 git update-index --really-refresh
 ```
