@@ -16,7 +16,7 @@ echo "Cleanup unnecessary files and optimize the local repository"
 git config --global gc.auto 256 #Set auto clean to be 256, to save memory
 
 echo "Enable inspecting small working trees' modification times"
-git config --global core.ignoreStat false
+git config core.ignoreStat false
 
 # This feature works quite well with git-annex. Especially because git annex's files are immutable, so aren't going to change out from under it, this is a nice fit. If you have a very large tree and git status is annoyingly slow, you can turn it on:
 

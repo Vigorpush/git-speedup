@@ -1,6 +1,5 @@
 echo "Start To Speed Up Git On your Windows Machine!"
 
-
 echo "Activate Git's own tracing"
 GIT_TRACE=1 git stash #Activate Git's own tracing
 
@@ -24,3 +23,5 @@ git config --global core.ignoreStat true
 # https://git-annex.branchable.com/tips/assume-unstaged/
 
 echo "Finishing Optimazing Git"
+
+echo "Please use git update-index --really-refresh when you make any changes"
