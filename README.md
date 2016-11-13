@@ -15,7 +15,7 @@ Which enable the ignoreStat, please use the
 ```bash
 git repack -a -d --depth=250 --window=250 
 ```
-For more detial, please visit link:
+For more detail, please visit link:
 http://git.661346.n2.nabble.com/git-repack-vs-git-gc-aggressive-td7564559.html
 
 #### 2. Enable git preload file index
@@ -34,7 +34,7 @@ please use following code instead ```bash git add ```
 ```bash 
 git update-index --really-refresh
 ```
-For more detial, please visit link: https://git-annex.branchable.com/tips/assume-unstaged/
+For more detail, please visit link: https://git-annex.branchable.com/tips/assume-unstaged/
 
 #### 4. Enble file system cache for local
 ```bash
