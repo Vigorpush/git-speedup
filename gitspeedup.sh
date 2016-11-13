@@ -21,3 +21,5 @@ git config core.ignoreStat false
 # These can be worked around by running git update-index --really-refresh after performing such operations. I hope that git add will be changed to stage changes to assume-unchanged files, which would remove this only complication
 
 echo "Finishing Optimazing Git"
+
+
