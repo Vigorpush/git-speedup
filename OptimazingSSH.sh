@@ -10,7 +10,7 @@ echo "specifies the path to the control socket used for connection sharing. %r w
 echo 'ControlPath /tmp/%r@%h:%p' >>~/.ssh/config
 echo "keeps the master connection open in the background indefinitely"
 
-echo 'ControlPersist yes \n' >>~/.ssh/config
+echo 'ControlPersist yes ' >>~/.ssh/config
 printf "Finished Optimazing SSH "
 
 
