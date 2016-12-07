@@ -1,6 +1,9 @@
 # git-speedup
 Speed up git bash on windows, also works on Mac machines. Including improvement of speed of executing git status, git add, git pull, git push, ls, cd etc.
-
+## Losing track of files
+```
+git branch --set-upstream YOUR_BRANCH_NAME upstream/YOUR_BRANCH_NAME
+```
 # Two Vesions 
 ### gitspeedup.sh ---- Small projects
 Which disEnable the ignoreStat, can use the ```git add ``` when we have some changed
