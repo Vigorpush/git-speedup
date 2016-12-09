@@ -4,7 +4,7 @@ Speed up git bash on windows, also works on Mac machines. Including improvement 
 ```
 git branch --set-upstream YOUR_BRANCH_NAME upstream/YOUR_BRANCH_NAME
 ```
-# Two Vesions 
+# Three Vesions 
 ### gitspeedup.sh ---- Small projects
 Which disEnable the ignoreStat, can use the ```git add ``` when we have some changed
 ### gitspeedupL.sh ---- Large projects
